@@ -1,0 +1,55 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden; /* Prevent page scrolling */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #87ceeb;
+}
+
+.flappy-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Canvas fills wrapper */
+canvas {
+  width: 100%;
+  height: 100%;
+  max-width: 480px;
+  max-height: 640px;
+  display: block;
+}
+
+/* Back button */
+#backBtn {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 8px 12px;
+  font-size: 16px;
+  z-index: 10;
+  cursor: pointer;
+}
+
+button {
+  margin: 10px;
+  padding: 15px 30px;  /* bigger padding */
+  font-size: 22px;     /* bigger text */
+  cursor: pointer;
+  border-radius: 8px;  /* slightly rounded */
+  background-color: #ffcc00;
+  border: none;
+  transition: transform 0.2s;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
